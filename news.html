@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - NOCTIS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+        <link rel="icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body class="news-page">
+    <!-- Navigation -->
+    <nav class="nav scrolled">
+        <div class="nav-content">
+            <a href="index.html" class="logo">NOCTIS</a>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">Menu</button>
+
+    <!-- Search Icon -->
+    <div class="search-icon" id="searchIcon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+        </svg>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul class="menu-links">
+            <li><a href="index.html">Games</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://discord.gg/WXBhaXnGUt">Discord</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-close" id="searchClose">×</button>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search news...">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- News Hero -->
+    <section class="news-hero">
+        <div class="news-hero-content">
+            <h1 class="news-hero-title">Latest<br>News</h1>
+            <p class="news-hero-subtitle">Stay updated with the latest from NOCTIS Studios</p>
+        </div>
+    </section>
+
+    <!-- News Articles -->
+    <section class="news-articles">
+        <div class="news-articles-content" id="news-articles-content">
+            <!-- News articles will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">NOCTIS</div>
+        <p class="footer-text">Making games cause it's fun.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="apply.html">Careers</a>
+            <a href="#">Press Kit</a>
+        </div>
+        <div class="copyright">
+            © 2025 NOCTIS Studios. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/news-loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/news-data.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

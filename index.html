@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOCTIS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">NOCTIS</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <a href="#" class="logo">NOCTIS</a>
+        </div>
+    </nav>
+
+    <!-- Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">Menu</button>
+
+    <!-- Search Icon -->
+    <div class="search-icon" id="searchIcon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+        </svg>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul class="menu-links">
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="https://discord.gg/WXBhaXnGUt">Discord</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-close" id="searchClose">×</button>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search news...">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Background Images/Videos -->
+    <div class="bg-image" id="bg-1" data-type="video" data-src="assets/rotball.mp4"></div>
+
+    <div class="bg-image" id="bg-2" data-type="image" data-src="assets/farminggameart.png"></div>
+
+    <!-- Main Content - Hero Games Section -->
+    <main class="hero-section" id="games">
+        <div class="film-list">
+            <div class="film-item" data-bg="bg-1">
+                <div class="film-title">Rot Ball<span class="film-year">2025</span></div>
+            </div>
+            <div class="film-item" data-bg="bg-2">
+                <div class="film-title">Untitled Farm Game<span class="film-year">2024</span></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Content Sections -->
+    <div class="content-sections">
+        <!-- About Studio Section -->
+        <section class="section about-section" id="about">
+            <div class="section-content">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title-large">About<br>Noctis</h2>
+                        <p class="about-description">
+                            Not sure what people usually write here so for now just imagine some cool text about how
+                            awesome Noctis is and how we are going to change the gaming industry with our amazing games.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Games Released</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Global Players</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://media1.tenor.com/m/zGQLL-kwwEoAAAAC/cat-meme-pee.gif" alt="NOCTIS Studio" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section news-section" id="news">
+            <div class="section-content">
+                <div class="news-header">
+                    <h2 class="section-title-large">Latest<br>News</h2>
+                </div>
+                <div class="news-grid" id="news-grid">
+                    <!-- News items will be loaded dynamically from the news folder -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section team-section" id="team">
+            <div class="section-content">
+                <div class="team-header">
+                    <h2 class="section-title-large">Meet the<br>Team</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-pfp" style="background-image: url('assets/jumper.webp');"></div>
+                        <h3 class="team-name">lordjumper</h3>
+                        <p class="team-role">Founder</p>
+                    </div>
+                    <a href="apply.html" class="team-member join-card" style="text-decoration: none; color: inherit;">
+                        <div class="team-pfp empty">
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <h3 class="team-name">You?</h3>
+                        <p class="team-role">Join Our Team</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">NOCTIS</div>
+        <p class="footer-text">Making games cause it's fun.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="apply.html">Careers</a>
+            <a href="#">Press Kit</a>
+        </div>
+        <div class="copyright">
+            © 2025 NOCTIS Studios. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news-data.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

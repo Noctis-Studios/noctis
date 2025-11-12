@@ -1,0 +1,73 @@
+.apply-page {
+    background: #fff;
+    color: #000;
+}
+
+.apply-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+    padding: 120px 60px 60px;
+}
+
+.apply-hero-content {
+    text-align: center;
+}
+
+.apply-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    line-height: 0.9;
+    margin-bottom: 30px;
+    color: #fff;
+    font-style: italic;
+}
+
+.apply-hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 1px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.apply-form-section {
+    padding: 80px 40px;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.apply-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 1200px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .apply-hero {
+        padding: 100px 40px 40px;
+        min-height: 40vh;
+    }
+
+    .apply-form-section {
+        padding: 60px 20px;
+    }
+
+    .apply-form-container iframe {
+        min-height: 1500px;
+    }
+}
